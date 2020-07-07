@@ -18,6 +18,16 @@ Insert into tblPerson( Name, Email, GenderID,Age)
 Select  'Rajni', 'rajni@gmail.com',2, 35
 
 Delete from tblPerson
+/* 
+
+Add And Alter table 
+ALTER TABLE ParameterMaster
+ALTER COLUMN IsDeleted Bit
+
+ALTER TABLE ParameterMaster
+ADD IsSystemParameter Bit;
+*/
+
 
 Set IDENTITY_INSERT tblPerson On
 Set IDENTITY_INSERT tblPerson Off
