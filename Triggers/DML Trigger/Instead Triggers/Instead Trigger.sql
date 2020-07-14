@@ -14,7 +14,14 @@ In the trigger, we used Raiserror() function, to raise a custom error, when the 
 doesnot exist. We are passing 3 parameters to the Raiserror() method. The first parameter is the error message, the second
 parameter is the severity level. Severity level 16, indicates general errors that can be corrected by the user. 
 The final parameter is the state. We will talk about Raiserror() and exception handling in sql server, in a later video session.
-*/
+
+Trigger	INSERTED or DELETED?
+
+Instead of Insert	DELETED table is always empty and the INSERTED table contains the newly inserted data.
+Instead of Delete	INSERTED table is always empty and the DELETED table contains the rows deleted
+Instead of Update	DELETED table contains OLD data (before update), and inserted table contains NEW data(Updated data)
+
+s*/
 
 Select * from vwEmployeeDetailsByDepartment
 
